@@ -1,4 +1,4 @@
-import { Injectable } from '@angular/core';
+import { Injectable } from "@angular/core";
 
 @Injectable()
 export class EventService {
@@ -6,6 +6,7 @@ export class EventService {
   getEvents():any[] {
     return EVENTS;
   }
+  // tslint:disable-next-line: typedef
   getEvent(id:number){
     return EVENTS.find(event=>event.id===id);
   }
